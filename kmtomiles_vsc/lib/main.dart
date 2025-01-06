@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void btn_kmTomiles() {
+  void btn_kmtomiles() {
     setState(() {
       //   myController.removeListener(() {btn2();});
       //
@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     controller: myController,
                     keyboardType: TextInputType.number,
                     onChanged: (text) {
-                      btn_kmTomiles();
+                      btn_kmtomiles();
                     },
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
@@ -157,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 ElevatedButton(
-                    onPressed: btn_kmTomiles, child: const Text('KmtoMiles')),
+                    onPressed: btn_kmtomiles, child: const Text('KmtoMiles')),
               ],
             ),
             Row(
