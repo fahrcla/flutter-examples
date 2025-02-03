@@ -33,6 +33,10 @@ class FirstScreen extends StatelessWidget {
         child: ElevatedButton(
           child: Text('Go to Second Screen'),
           onPressed: () {
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => SecondScreen(message: "Hello from first screen")),
+            // );
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SecondScreen()),
@@ -47,6 +51,23 @@ class FirstScreen extends StatelessWidget {
 
 
 class SecondScreen extends StatelessWidget {
+/*
+  SecondScreen({required this.message});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Screen"),
+      ),
+      body: Center(
+        child: Text("Message from first screen: " + message),
+      )
+    );
+  }
+}
+
+*/
   const SecondScreen({super.key});
 
   @override
@@ -66,4 +87,5 @@ class SecondScreen extends StatelessWidget {
     );
   }
 }
+
 
