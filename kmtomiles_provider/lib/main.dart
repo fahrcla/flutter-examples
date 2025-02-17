@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: ChangeNotifierProvider(
-        create: (_) => CalculProvider(compteur: 0, km: 0, miles: 0),
+        create: (_) => CalculProvider( km: 0, miles: 0),
         child: MyHomePage(title: 'Flutter Provider'),
       ),
     );
